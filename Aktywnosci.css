@@ -24,19 +24,81 @@ header
 }
 nav
 {
+    display: inline-block;
+    width: 100%;
+}
+.menu
+{
     height: 4vh;
     width: 35vw;
-    float: right;
     background: #1F1F1F;
     border: 1px solid #CCD2E3;
     border-top: 0px;
     border-radius: 0px 0px 30px 30px;
     font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
 }
-.menu
+.menu2
 {
     list-style-type: none;
-    color: #ECEFF4;
     text-decoration: none;
-    display: inline;
+    color: #ECEFF4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+}
+li
+{
+    margin: 0 0.5vw;
+    font-size: 14px;
+}
+main
+{
+    display: flex;
+    height: 100vh;
+}
+.lewo
+{
+    width: 50%;
+    height: 100%;
+    border: 1px solid white;
+    color: #ECEFF4;
+}
+.prawo
+{
+    width: 50%;
+    height: 100%;
+    border: 1px solid white;
+}
+.aktywnosci
+{
+    margin-left: 3.5vw;
+}
+.nalinie
+{
+    height: 100%;
+    width: 20%;
+    border: 1px solid red;
+    display: inline-block;
+    margin: 0;
+}
+.natekst
+{
+    height: 100%;
+    width: 78%;
+    border: 1px solid blue;
+    display: inline-block;
+    margin: 0;
+
+}
+.linialewo
+{
+    height: 100%;
+    width: 0%;
+    border: 10px solid #CCD2E3;
+    float: right;
 }
