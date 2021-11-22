@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
-
+*
+{
+    margin: 0;
+    padding: 0;
+}
 body
 {
     background-color: #1F1F1F;
@@ -8,6 +12,7 @@ body
     font-family: 'PT Serif', serif;
     font-style: normal;
     font-weight: bold;
+    color: #ECEFF4;
 }
 header
 {
@@ -17,9 +22,10 @@ header
     justify-content: center;
     align-items: center;
     height: 5vh;
-    width: 100vw;
+    width: 99.9%;
     border: 1px solid #CCD2E3;
     border-top: 0px;
+    border-right: 0px;
     border-radius: 0 0 0 20px;
 }
 nav
@@ -45,11 +51,9 @@ nav
 {
     list-style-type: none;
     text-decoration: none;
-    color: #ECEFF4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 0px;
 }
 li
 {
@@ -59,46 +63,108 @@ li
 main
 {
     display: flex;
-    height: 100vh;
+    justify-content: center;
 }
-.lewo
+main > div
 {
-    width: 50%;
-    height: 100%;
-    border: 1px solid white;
-    color: #ECEFF4;
+    width: 82%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-left: 5px solid #CCD2E3;
+    border-right: 5px solid #CCD2E3;
+    border-radius: 1%;
 }
-.prawo
+.lewy article
 {
-    width: 50%;
-    height: 100%;
-    border: 1px solid white;
+    width: 100%;
+    height: 28vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0.01vw;
+}
+.lewy article img
+{
+    height: 20vh;
+}
+.lewy article div:first-child
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lewy article div:last-child
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+h1
+{
+    font-size: 30px;
+}
+h2
+{
+    font-size: 30px;
+}
+h3
+{
+    font-size: 20px;
+}
+h4
+{
+    font-size: 30px;
+}
+h5
+{
+    font-size: 20px;
+}
+.lewy article div h3
+{
+    color: #8A8E96;
+    margin-bottom: 1vh;
+}
+.lewy article div:last-child p
+{
+    font-size: 15px;
+    color: #8A8E96;
 }
 .aktywnosci
 {
-    margin-left: 3.5vw;
+    width: 95%;
 }
-.nalinie
+.naaktywnosci
 {
-    height: 100%;
-    width: 20%;
-    border: 1px solid red;
-    display: inline-block;
-    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-.natekst
+.prawy article
 {
-    height: 100%;
-    width: 78%;
-    border: 1px solid blue;
-    display: inline-block;
-    margin: 0;
-
+    width: 100%;
+    height: 67vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.linialewo
+.prawy article img
 {
-    height: 100%;
-    width: 0%;
-    border: 10px solid #CCD2E3;
-    float: right;
+    height: 40vh;
+}
+.miesiac
+{
+    color: #8A8E96;
+}
+.prawy article h2
+{
+    font-size: 30px;
+}
+.prawy article h4
+{
+    font-size: 30px;
+}
+.prawy article h5
+{
+    font-size: 30px;
 }
