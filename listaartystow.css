@@ -77,21 +77,20 @@ main > div
 .lewy article
 {
     width: 100%;
-    height: 28vh;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 0.01vw;
+    height: 16vh;
+    display: flex;
+    justify-content: flex-start;
 }
 .lewy article img
 {
-    height: 20vh;
+    height: 13vh;
+    border-radius: 50%;
 }
 .lewy article div:first-child
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 .lewy article div:last-child
 {
@@ -178,4 +177,13 @@ a
 {
     text-decoration: none;
     color: #ECEFF4;
+}
+.lewy article div:first-child img
+{
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+.lewy article div:last-child h4
+{
+    margin-left: 2vw;
 }
