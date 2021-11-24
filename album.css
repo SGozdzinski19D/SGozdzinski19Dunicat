@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+a
+{
+    text-decoration: none;
+    color: #ECEFF4;
+}
+h1
+{
+    font-size: 30px;
+}
+h2
+{
+    font-size: 40px;
+}
+h3
+{
+    font-size: 30px;
+}
+h4
+{
+    font-size: 30px;
+}
+h5
+{
+    font-size: 20px;
+    color: #ECEFF4;
+}
+.nanumerki p
+{
+    font-size: 20px;
+}
+.natytuly p
+{
+    font-size: 20px;
+}
+.nazwa h3
+{
+    color: #8A8E96;
+}
+body
+{
+    background-color: #1F1F1F;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #ECEFF4;
+}
+header
+{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 99.9%;
+    border: 1px solid #CCD2E3;
+    border-top: 0px;
+    border-right: 0px;
+    border-radius: 0 0 0 20px;
+}
+nav
+{
+    display: inline-block;
+    width: 100%;
+}
+.menu
+{
+    height: 4vh;
+    width: 35vw;
+    background: #1F1F1F;
+    border: 1px solid #CCD2E3;
+    border-top: 0px;
+    border-radius: 0px 0px 30px 30px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+.menu2
+{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+li
+{
+    margin: 0 0.5vw;
+    font-size: 14px;
+}
+.tytul
+{
+    width: 95%;
+}
+.natytul
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main
+{
+    display: flex;
+    justify-content: center;
+}
+main > div
+{
+    width: 82%;
+    border-left: 5px solid #CCD2E3;
+    border-right: 5px solid #CCD2E3;
+    border-top: 5px solid #CCD2E3;
+    border-radius: 1%;
+}
+.gora
+{
+    display: flex;
+    width: 100%;
+}
+.nazdjeciealbumu
+{
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+.nazwa
+{
+    margin-left: 2vw;
+    margin-top: 4vh;
+}
+.dol
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 5px solid #CCD2E3;
+    border-radius: 1%;
+}
+.wysrodkowaniedolu
+{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0.01vw;
+    margin-top: 2vh;
+}
+.zdjeciealbumu
+{
+    height: 30vh;
+}
+.natracklista
+{
+    width: 100%;
+    color: #8A8E96;
+}
+.naoalbumie
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.naoalbumie h4
+{
+    color: #8A8E96;
+}
+.naoalbumie p
+{
+    text-align: justify;
+    margin-top: 2vh;
+}
+.dolprawo
+{
+    padding-left: 5vw;
+}
+.nanuty
+{
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+}
+.nanumerki p
+{
+    margin-bottom: 1vh;
+}
+.natytuly
+{
+    margin-left: 1vw;
+}
+.natytuly h5
+{
+    margin-bottom: 1vh;
+}
+.natytuly p
+{
+    margin-bottom: 1vh;
+}
