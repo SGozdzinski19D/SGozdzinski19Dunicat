@@ -157,9 +157,17 @@ main > div
 {
     height: 30vh;
 }
-.natracklista
+.natekst
 {
     width: 100%;
+}
+.natekst p
+{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.natekst h4
+{
     color: #8A8E96;
 }
 .naoalbumie
@@ -181,25 +189,7 @@ main > div
 {
     padding-left: 5vw;
 }
-.nanuty
+pre
 {
-    margin-top: 2vh;
-    width: 100%;
-    display: flex;
-}
-.nanumerki p
-{
-    margin-bottom: 1vh;
-}
-.natytuly
-{
-    margin-left: 1vw;
-}
-.natytuly h5
-{
-    margin-bottom: 1vh;
-}
-.natytuly p
-{
-    margin-bottom: 1vh;
+    font-size: 20px;
 }
