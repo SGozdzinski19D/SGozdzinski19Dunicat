@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="album.css">
     <title>NIC</title>
 </head>
-<body>
+<body onload="IleMineloAlbum()">
     <header>
         <a href="index.html"><img src="unicatlogo.png" alt="logo strony"></a>
     </header>
@@ -17,7 +17,7 @@
                 <li><a href="index.html">AKTYWNOŚCI</a></li>
                 <li><a href="listaartystow.html">LISTA ARTYSTÓW</a></li>
                 <li><a href="listaalbumow.html">LISTA ALBUMÓW</a></li>
-                <li>REJESTRACJA</li>
+                <li class="zegar"></li>
             </ul>
         </div>
     </nav>
@@ -34,8 +34,9 @@
                     <img src="nic.jpg" alt="Zdjęcie albumu - NIC" class="zdjeciealbumu">
                 </div>
                 <div class="nazwa">
-                    <h2>NIC</h2>
+                    <h2 id="nazwa">NIC</h2>
                     <a href="sokol.html"><h3>Sokół</h3></a>
+                    <p class="plyta"></p>
                 </div>                
             </div>
             <div class="dol">
