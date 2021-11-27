@@ -21,58 +21,35 @@ function IleMineloAlbum()
   let teraz = new Date()
   let album = document.querySelector("#nazwa").innerText
   let dataalbum = 0
-  if(album == "Ognisko Niedomowe")
+  
+  switch (album)
   {
-    dataalbum = new Date(2021,10,12)
-  }
-  else
-  {
-    if(album == "Hustle As Usual")
-    {
+    case 'Ognisko Niedomowe':
+      dataalbum = new Date(2021,10,12)
+      break;
+    case 'Hustle As Usual':
       dataalbum = new Date(2021,5,25)
-    }
-    else
-    {
-      if(album == "Moody Tapes, Volume One")
-      {
-        dataalbum = new Date(2021,5,10)
-      }
-      else
-      {
-        if(album == "Dziki & Nietoperze")
-        {
-          dataalbum = new Date(2019,5,20)
-        }
-        else
-        {
-          if(album == "Młody Matczak")
-          {
-            dataalbum = new Date(2021,9,1)
-          }
-          else
-          {
-            if(album == "ZL Epilog")
-            {
-              dataalbum = new Date(2021,10,20)
-            }
-            else
-            {
-              if(album == "NIC")
-              {
-                dataalbum = new Date(2021,10,19)
-              }
-              else
-              {
-                if(album == "Hulanki")
-                {
-                  dataalbum = new Date(2021,8,23)
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+      break;
+    case 'Moody Tapes, Volume One':
+      dataalbum = new Date(2021,5,10)
+      break;
+    case 'Dziki & Nietoperze':
+      dataalbum = new Date(2019,5,20)
+      break;
+    case 'Młody Matczak':
+      dataalbum = new Date(2021,9,1)
+      break;
+    case 'ZL Epilog':
+      dataalbum = new Date(2021,10,20)
+      break;
+    case 'NIC':
+      dataalbum = new Date(2021,10,19)
+      break;
+    case 'Hulanki':
+      dataalbum = new Date(2021,8,23)
+      break;
+    default:
+      console.log("Błąd");
   }
   let dzis = new Date(teraz.getFullYear(), teraz.getMonth(), teraz.getDate())
   let dni = (dzis.getTime() - dataalbum.getTime()) / 86400000
@@ -87,68 +64,43 @@ function IleMineloArtysta()
   let teraz = new Date()
   let artysta = document.querySelector("#nazwa").innerText
   let dataalbum = 0
-  if(artysta == "Adi Nowak")
+  
+  switch (artysta)
   {
-    dataalbum = new Date(2021,10,12)
-  }
-  else
-  {
-    if(artysta == "Belmondo")
-    {
+    case 'Adi Nowak':
+      dataalbum = new Date(2021,10,12)
+      break;
+    case 'Belmondo':
       dataalbum = new Date(2021,5,25)
-    }
-    else
-    {
-      if(artysta == "Hodak")
-      {
-        dataalbum = new Date(2021,5,10)
-      }
-      else
-      {
-        if(artysta == "Leh")
-        {
-          dataalbum = new Date(2019,5,20)
-        }
-        else
-        {
-          if(artysta == "Mata")
-          {
-            dataalbum = new Date(2021,9,1)
-          }
-          else
-          {
-            if(artysta == "Sentino")
-            {
-              dataalbum = new Date(2021,10,20)
-            }
-            else
-            {
-              if(artysta == "Sokół")
-              {
-                dataalbum = new Date(2021,10,19)
-              }
-              else
-              {
-                if(artysta == "Young Leosia")
-                {
-                  dataalbum = new Date(2021,8,23)
-                }
-              }
-            }
-          }
-        }
-      }
-    }
+      break;
+    case 'Hodak':
+      dataalbum = new Date(2021,5,10)
+      break;
+    case 'Leh':
+      dataalbum = new Date(2019,5,20)
+      break;
+    case 'Mata':
+      dataalbum = new Date(2021,9,1)
+      break;
+    case 'Sentino':
+      dataalbum = new Date(2021,10,20)
+      break;
+    case 'Sokół':
+      dataalbum = new Date(2021,10,19)
+      break;
+    case 'Young Leosia':
+      dataalbum = new Date(2021,8,23)
+      break;
+    default:
+      console.log("Błąd");
   }
   let dzis = new Date(teraz.getFullYear(), teraz.getMonth(), teraz.getDate())
   let dni = (dzis.getTime() - dataalbum.getTime()) / 86400000
 
   let miejsce = document.querySelector(".plyta")
-  miejsce.innerText = "Od wydania ostatniej płyty minęło: " + parseInt(dni) + " dni"
-  setTimeout(IleMineloArtysta, 1000)
+  miejsce.innerText = "Od premiery płyty minęło: " + parseInt(dni) + " dni"
+  setTimeout(IleMineloAlbum, 1000)
 }
-
-
 
 //Alerty od niedziałających rzeczy
 const NiedzialajacyAlbum = document.querySelectorAll(".niedzialaalbum")

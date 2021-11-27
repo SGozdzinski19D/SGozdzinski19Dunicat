@@ -20,6 +20,11 @@ h2
 h3
 {
     font-size: 30px;
+    transition-duration: 1s;
+}
+h3:hover
+{
+    font-size: 32px;
 }
 h4
 {
@@ -97,6 +102,11 @@ li
 {
     margin: 0 0.5vw;
     font-size: 14px;
+    transition-duration: 1s;
+}
+li:hover
+{
+    font-size: 15px;
 }
 .tytul
 {

@@ -59,6 +59,11 @@ li
 {
     margin: 0 0.5vw;
     font-size: 14px;
+    transition-duration: 1s;
+}
+li:hover
+{
+    font-size: 15px;
 }
 main
 {
@@ -85,6 +90,11 @@ main > div
 .lewy article img
 {
     height: 20vh;
+    transition-duration: 1s;
+}
+.lewy article img:hover
+{
+    height: 21vh;
 }
 .lewy article div:first-child
 {
@@ -103,6 +113,7 @@ main > div
 h1
 {
     font-size: 30px;
+    transition-duration: 1s;
 }
 h2
 {
@@ -115,10 +126,12 @@ h3
 h4
 {
     font-size: 30px;
+    transition-duration: 1s;
 }
 h5
 {
     font-size: 20px;
+    transition-duration: 1s;
 }
 .lewy article div h3
 {
@@ -163,10 +176,21 @@ h5
 .prawy article h4
 {
     font-size: 30px;
+    transition-duration: 1s;
 }
 .prawy article h5
 {
     font-size: 30px;
+    transition-duration: 1s;
+}
+.prawy article h4:hover
+{
+    font-size: 32px;
+    
+}
+.prawy article h5:hover
+{
+    font-size: 32px;
 }
 .prawy
 {
@@ -184,4 +208,12 @@ a
     width: 100px;
     height: 100px;
     border: 1px solid red;
+}
+h4:hover
+{
+    font-size: 32px;
+}
+h5:hover
+{
+    font-size: 22px;
 }

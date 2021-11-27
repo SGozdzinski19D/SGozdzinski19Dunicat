@@ -59,6 +59,11 @@ li
 {
     margin: 0 0.5vw;
     font-size: 14px;
+    transition-duration: 1s;
+}
+li:hover
+{
+    font-size: 15px;
 }
 main
 {
@@ -84,6 +89,11 @@ main > div
 .lewy article img
 {
     height: 13vh;
+    transition-duration: 1s;
+}
+.lewy article img:hover
+{
+    height: 14vh;
 }
 .lewy article div:first-child
 {
@@ -161,10 +171,21 @@ h5
 .prawy article h4
 {
     font-size: 30px;
+    transition-duration: 1s;
 }
 .prawy article h5
 {
     font-size: 30px;
+    transition-duration: 1s;
+}
+.prawy article h4:hover
+{
+    font-size: 32px;
+    
+}
+.prawy article h5:hover
+{
+    font-size: 32px;
 }
 .prawy
 {
@@ -185,9 +206,22 @@ a
 .lewy article div:last-child h4
 {
     margin-left: 2vw;
+    transition-duration: 1s;
 }
 .lewy article div:last-child h5
 {
     margin-left: 2vw;
     color: #8A8E96;
+    transition-duration: 1s;
+}
+.lewy article div:last-child h4:hover
+{
+    margin-left: 2vw;
+    font-size: 32px;
+}
+.lewy article div:last-child h5:hover
+{
+    margin-left: 2vw;
+    color: #8A8E96;
+    font-size: 22px;
 }
