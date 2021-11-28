@@ -18,6 +18,62 @@ function ZegarGlowny()
 }
 ZegarGlowny()
 
+//Licznik dni od wydania ostatniego albumu
+
+function IleMineloArtysta()
+{
+  let teraz = new Date()
+  let artysta = document.querySelector("#nazwa").innerText
+  let dataalbum = 0
+  
+  switch (artysta)
+  {
+    case 'Adi Nowak':
+      dataalbum = new Date(2021,10,12)
+      break;
+    case 'Belmondo':
+      dataalbum = new Date(2021,5,25)
+      break;
+    case 'Hodak':
+      dataalbum = new Date(2021,5,10)
+      break;
+    case 'Leh':
+      dataalbum = new Date(2019,5,20)
+      break;
+    case 'Mata':
+      dataalbum = new Date(2021,9,1)
+      break;
+    case 'Sentino':
+      dataalbum = new Date(2021,10,20)
+      break;
+    case 'Sokół':
+      dataalbum = new Date(2021,10,19)
+      break;
+    case 'Young Leosia':
+      dataalbum = new Date(2021,8,23)
+      break;
+    default:
+      console.log("Błąd");
+  }
+  let dzis = new Date(teraz.getFullYear(), teraz.getMonth(), teraz.getDate())
+  let dni = (dzis.getTime() - dataalbum.getTime()) / 86400000
+
+  let miejsce = document.querySelector(".plyta")
+  miejsce.innerText = "Od premiery ostatniej płyty minęło: " + parseInt(dni) + " dni"
+  setTimeout(IleMineloArtysta, 1000)
+}
+
+//Alert niedziałającego albumu
+
+const NiedzialajacyAlbum = document.querySelectorAll(".niedzialaalbum")
+
+function AlbumNieDziala()
+{
+  alert ("Zawartość tego albumu nie została jeszcze wprowadzona na stronę. Spróbuj sprawdzić najnowszy album wybranego przez Ciebie artysty, on na pewno działa!");
+}
+
+NiedzialajacyAlbum.forEach(item => item.addEventListener("click", AlbumNieDziala))
+
 //Zmiana trybu jasny/ciemny
 
 let checker = 0
@@ -39,6 +95,9 @@ function ZmianaTrybu()
     }
     document.querySelector(".glowny").style.borderLeft = "5px solid #171717";
     document.querySelector(".glowny").style.borderRight = "5px solid #171717";
+    document.querySelector(".glowny").style.borderTop = "5px solid #171717";
+    document.querySelector(".dol").style.borderTop = "5px solid #171717";
+
     let h3nastronie = document.querySelectorAll("h3")
     for(i = 0 ; i < h3nastronie.length ; i++)
     {
@@ -58,6 +117,21 @@ function ZmianaTrybu()
     for(i = 0 ; i < autor.length ; i++)
     {
       autor[i].style.color = "#454649";
+    }
+    let naglowek = document.querySelectorAll(".dol h4")
+    for(i = 0 ; i < naglowek.length ; i++)
+    {
+      naglowek[i].style.color = "#454649";
+    }
+    let nazwaalbumu = document.querySelectorAll(".album h5")
+    for(i = 0 ; i < nazwaalbumu.length ; i++)
+    {
+      nazwaalbumu[i].style.color = "#171717";
+    }
+    let rok = document.querySelectorAll(".album p")
+    for(i = 0 ; i < rok.length ; i++)
+    {
+      rok[i].style.color = "#454649";
     }
 
     document.querySelector("header img").src = "unicatlogoblack.png"
@@ -79,6 +153,9 @@ function ZmianaTrybu()
     }
     document.querySelector(".glowny").style.borderLeft = "5px solid #CCD2E3";
     document.querySelector(".glowny").style.borderRight = "5px solid #CCD2E3";
+    document.querySelector(".glowny").style.borderTop = "5px solid #CCD2E3";
+    document.querySelector(".dol").style.borderTop = "5px solid #CCD2E3";
+
     let h3nastronie = document.querySelectorAll("h3")
     for(i = 0 ; i < h3nastronie.length ; i++)
     {
@@ -98,6 +175,21 @@ function ZmianaTrybu()
     for(i = 0 ; i < autor.length ; i++)
     {
       autor[i].style.color = "#8A8E96";
+    }
+    let naglowek = document.querySelectorAll(".dol h4")
+    for(i = 0 ; i < naglowek.length ; i++)
+    {
+      naglowek[i].style.color = "#8A8E96";
+    }
+    let nazwaalbumu = document.querySelectorAll(".album h5")
+    for(i = 0 ; i < nazwaalbumu.length ; i++)
+    {
+      nazwaalbumu[i].style.color = "#CCD2E3";
+    }
+    let rok = document.querySelectorAll(".album p")
+    for(i = 0 ; i < rok.length ; i++)
+    {
+      rok[i].style.color = "#8A8E96";
     }
     
     document.querySelector("header img").src = "unicatlogowhite.png"
