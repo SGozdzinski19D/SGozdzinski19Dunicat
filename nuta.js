@@ -24,6 +24,7 @@ function ZmianaTrybu()
   if(checker == 0)
   {
     document.querySelector("body").style.backgroundColor = "#dbdbdb";
+    document.querySelector(".menudol").style.backgroundColor = "#dbdbdb";
     document.querySelector("body").style.color = "#171717";
     document.querySelector("header").style.border = "1px solid #171717";
     document.querySelector("header").style.borderRight = "0";
@@ -76,12 +77,17 @@ function ZmianaTrybu()
     }
 
     document.querySelector("header img").src = "unicatlogoblack.png"
+    document.querySelectorAll(".menudol img")[0].src = "User2.png"
+    document.querySelectorAll(".menudol img")[1].src = "Fire2.png"
+    document.querySelectorAll(".menudol img")[2].src = "Folder2.png"
+    document.querySelectorAll(".menudol img")[3].src = "Color2.png"
 
     checker = 1
   }
   else
   {
     document.querySelector("body").style.backgroundColor = "#1F1F1F";
+    document.querySelector(".menudol").style.backgroundColor = "#1F1F1F";
     document.querySelector("body").style.color = "#ECEFF4";
     document.querySelector("header").style.border = "1px solid #CCD2E3";
     document.querySelector("header").style.borderRight = "0";
@@ -134,6 +140,10 @@ function ZmianaTrybu()
     }
     
     document.querySelector("header img").src = "unicatlogowhite.png"
+    document.querySelectorAll(".menudol img")[0].src = "User1.png"
+    document.querySelectorAll(".menudol img")[1].src = "Fire1.png"
+    document.querySelectorAll(".menudol img")[2].src = "Folder1.png"
+    document.querySelectorAll(".menudol img")[3].src = "Color1.png"
 
     checker = 0
   }
