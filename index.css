@@ -256,11 +256,11 @@ h5:hover
     }
     main > div
     {
-        width: 95%;
-        border: 0px;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 2vh;
     }
     .prawy
     {
