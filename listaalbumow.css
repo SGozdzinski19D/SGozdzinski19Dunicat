@@ -47,6 +47,10 @@ nav
     align-items: center;
     float: right;
 }
+.menudol
+{
+    display: none;
+}
 .menu2
 {
     list-style-type: none;
@@ -224,4 +228,60 @@ a
     margin-left: 2vw;
     color: #8A8E96;
     font-size: 22px;
+}
+
+@media only screen and (max-width: 1000px) 
+{
+    .menu
+    {
+        display: none;
+    }
+    .menu2
+    {
+        display: none;
+    }
+    header
+    {
+        border-radius: 0vh 0vh 5vh 5vh;
+    }
+    .menudol
+    {
+        position: fixed;
+        height: 5vh;
+        width: 100%;
+        background: #1F1F1F;
+        border: 1px solid #CCD2E3;
+        border-bottom: 0px;
+        border-radius: 5vh 5vh 0vh 0vh;
+        bottom: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menudol img
+    {
+        height: 3.5vh;
+        margin-top: 0.5vh;
+    }
+    main > div
+    {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh;
+    }
+    .prawy
+    {
+        display: none;
+    }
+    .lewy article
+    {
+        margin-bottom: 3vh;
+    }
+    h3
+    {
+        font-size: 2.5vh;
+    }
+
 }
