@@ -11,29 +11,36 @@ a
 }
 h1
 {
-    font-size: 30px;
+    font-size: 4.3vh;
+    transition-duration: 1s;
 }
 h2
 {
-    font-size: 40px;
+    font-size: 4.3vh;
 }
 h3
 {
-    font-size: 30px;
+    font-size: 3vh;
+    transition-duration: 1s;
+}
+h4
+{
+    font-size: 4.3vh;
+    transition-duration: 1s;
+}
+h5
+{
+    font-size: 3vh;
     transition-duration: 1s;
 }
 h3:hover
 {
-    font-size: 32px;
+    font-size: 3.2vh;
 }
-h4
+header img
 {
-    font-size: 30px;
-}
-h5
-{
-    font-size: 20px;
-    color: #ECEFF4;
+    height: 3vh;
+    width: 10vh;
 }
 .nanumerki p
 {
@@ -105,12 +112,12 @@ nav
 li
 {
     margin: 0 0.5vw;
-    font-size: 14px;
+    font-size: 1.85vh;
     transition-duration: 1s;
 }
 li:hover
 {
-    font-size: 15px;
+    font-size: 2vh;
 }
 .tytul
 {
@@ -189,6 +196,7 @@ main > div
 {
     text-align: justify;
     margin-top: 2vh;
+    font-size: 2vh;
 }
 .dolprawo
 {
@@ -203,6 +211,7 @@ main > div
 .nanumerki p
 {
     margin-bottom: 1vh;
+    font-size: 3vh;
 }
 .natytuly
 {
@@ -218,13 +227,12 @@ main > div
 }
 .plyta
 {
-    font-size: 20px;
+    font-size: 3vh;
     margin-top: 11vh;
 }
-.plyta
+.natytuly p 
 {
-    font-size: 20px;
-    margin-top: 10vh;
+    font-size: 3vh;
 }
 
 @media only screen and (max-width: 1000px) 

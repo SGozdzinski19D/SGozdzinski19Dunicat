@@ -28,6 +28,11 @@ header
     border-right: 0px;
     border-radius: 0 0 0 20px;
 }
+header img
+{
+    height: 3vh;
+    width: 10vh;
+}
 nav
 {
     display: inline-block;
@@ -62,12 +67,12 @@ nav
 li
 {
     margin: 0 0.5vw;
-    font-size: 14px;
+    font-size: 1.85vh;
     transition-duration: 1s;
 }
 li:hover
 {
-    font-size: 15px;
+    font-size: 2vh;
 }
 main
 {
@@ -114,23 +119,26 @@ main > div
 }
 h1
 {
-    font-size: 30px;
+    font-size: 4.3vh;
+    transition-duration: 1s;
 }
 h2
 {
-    font-size: 30px;
+    font-size: 4.3vh;
 }
 h3
 {
-    font-size: 20px;
+    font-size: 3vh;
 }
 h4
 {
-    font-size: 30px;
+    font-size: 4.3vh;
+    transition-duration: 1s;
 }
 h5
 {
-    font-size: 20px;
+    font-size: 3vh;
+    transition-duration: 1s;
 }
 .lewy article div h3
 {
@@ -170,26 +178,26 @@ h5
 }
 .prawy article h2
 {
-    font-size: 30px;
+    font-size: 4.3vh;
 }
 .prawy article h4
 {
-    font-size: 30px;
+    font-size: 4.3vh;
     transition-duration: 1s;
 }
 .prawy article h5
 {
-    font-size: 30px;
+    font-size: 4.3vh;
     transition-duration: 1s;
 }
 .prawy article h4:hover
 {
-    font-size: 32px;
+    font-size: 4.5vh;
     
 }
 .prawy article h5:hover
 {
-    font-size: 32px;
+    font-size: 4.5vh;
 }
 .prawy
 {
@@ -221,13 +229,13 @@ a
 .lewy article div:last-child h4:hover
 {
     margin-left: 2vw;
-    font-size: 32px;
+    font-size: 4.5vh;
 }
 .lewy article div:last-child h5:hover
 {
     margin-left: 2vw;
     color: #8A8E96;
-    font-size: 22px;
+    font-size: 3.2vh;
 }
 
 @media only screen and (max-width: 1000px) 

@@ -11,24 +11,30 @@ a
 }
 h1
 {
-    font-size: 30px;
+    font-size: 4.3vh;
+    transition-duration: 1s;
 }
 h2
 {
-    font-size: 40px;
+    font-size: 4.3vh;
 }
 h3
 {
-    font-size: 30px;
+    font-size: 3vh;
 }
 h4
 {
-    font-size: 30px;
+    font-size: 4.3vh;
+    transition-duration: 1s;
 }
 h5
 {
-    font-size: 20px;
-    color: #ECEFF4;
+    font-size: 3vh;
+}
+header img
+{
+    height: 3vh;
+    width: 10vh;
 }
 .nazwa h3
 {
@@ -71,7 +77,6 @@ nav
     border: 1px solid #CCD2E3;
     border-top: 0px;
     border-radius: 0px 0px 30px 30px;
-    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,12 +93,12 @@ nav
 li
 {
     margin: 0 0.5vw;
-    font-size: 14px;
+    font-size: 1.85vh;
     transition-duration: 1s;
 }
 li:hover
 {
-    font-size: 15px;
+    font-size: 2vh;
 }
 .tytul
 {
@@ -195,6 +200,7 @@ main > div
 }
 .naoartyscie p
 {
+    font-size: 2vh;
     text-align: justify;
     margin-top: 2vh;
 }
@@ -204,7 +210,7 @@ main > div
 }
 .plyta
 {
-    font-size: 20px;
+    font-size: 3vh;
     margin-top: 10vh;
 }
 .menudol

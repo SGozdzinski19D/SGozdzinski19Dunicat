@@ -41,7 +41,6 @@ nav
     border: 1px solid #CCD2E3;
     border-top: 0px;
     border-radius: 0px 0px 30px 30px;
-    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,12 +57,12 @@ nav
 li
 {
     margin: 0 0.5vw;
-    font-size: 14px;
+    font-size: 1.85vh;
     transition-duration: 1s;
 }
 li:hover
 {
-    font-size: 15px;
+    font-size: 2vh;
 }
 main
 {
@@ -109,25 +108,33 @@ main > div
     justify-content: center;
     flex-direction: column;
 }
+header img
+{
+    height: 3vh;
+    width: 10vh;
+}
 h1
 {
-    font-size: 30px;
+    font-size: 4.3vh;
+    transition-duration: 1s;
 }
 h2
 {
-    font-size: 30px;
+    font-size: 4.3vh;
 }
 h3
 {
-    font-size: 20px;
+    font-size: 3vh;
 }
 h4
 {
-    font-size: 30px;
+    font-size: 4.3vh;
+    transition-duration: 1s;
 }
 h5
 {
-    font-size: 20px;
+    font-size: 3vh;
+    transition-duration: 1s;
 }
 .lewy article div h3
 {
@@ -136,7 +143,6 @@ h5
 }
 .lewy article div:last-child p
 {
-    font-size: 15px;
     color: #8A8E96;
 }
 .tytul
@@ -167,16 +173,16 @@ h5
 }
 .prawy article h2
 {
-    font-size: 30px;
+    font-size: 4.3vh;
 }
 .prawy article h4
 {
-    font-size: 30px;
+    font-size: 4.3vh;
     transition-duration: 1s;
 }
 .prawy article h4:hover
 {
-    font-size: 32px;   
+    font-size: 4.5vh;
 }
 .prawy
 {
@@ -202,7 +208,7 @@ a
 .lewy article div:last-child h4:hover
 {
     margin-left: 2vw;
-    font-size: 32px;
+    font-size: 4.5vh;
 }
 .menudol
 {
